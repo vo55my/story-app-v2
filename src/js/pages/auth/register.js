@@ -38,7 +38,7 @@ const Register = {
           window.alert('Registered a new user');
           this._goToLoginPage();
         } else {
-          if (formData.password.length <= 8) {
+          if (formData.password.length <= 9) {
             window.alert(`Password harus minimal 8 karakter`);
           } else {
             window.alert(`${response.response.data.message}`);

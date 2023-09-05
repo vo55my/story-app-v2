@@ -8,8 +8,8 @@ class ShowPassword extends LitWithoutShadowDom {
 
   render() {
     return html`
-      <input class="form-check-input" type="checkbox" @click=${() => this._showPassword()} /> Show
-      Password
+      <input class="form-check-input" id="showPassword" type="checkbox" @click=${() => this._showPassword()} />
+      <label for="showPassword">Show Password</label>
     `;
   }
 
